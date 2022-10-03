@@ -19,7 +19,7 @@ exports.create = (req, res) => {
     status: req.body.status,
     amount: req.body.amount,
   });
-
+  
   //save user in database
 
   user
