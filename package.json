@@ -4,7 +4,7 @@
   "description": "crud application using node and express",
   "main": "server.js",
   "scripts": {
-    "build": "npm install && npm run build",
+    "build": "npm install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
@@ -21,5 +21,15 @@
     "mongoose": "^5.10.11",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.20"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rajshree326/Donation_Camp.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Rajshree326/Donation_Camp/issues"
+  },
+  "homepage": "https://github.com/Rajshree326/Donation_Camp#readme"
 }
