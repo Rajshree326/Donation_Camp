@@ -17,6 +17,7 @@ exports.create = (req, res) => {
     email: req.body.email,
     gender: req.body.gender,
     status: req.body.status,
+    amount: req.body.amount,
   });
 
   //save user in database

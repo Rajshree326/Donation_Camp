@@ -12,6 +12,10 @@ var schema = new mongoose.Schema({
   },
   gender: String,
   status: String,
+  amount: {
+    type:String,
+    required: true,
+  },
 });
 const Userdb = mongoose.model('userdb', schema);
 module.exports = Userdb;
