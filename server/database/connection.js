@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
-// const dotenv = require('dotenv');
 
-// dotenv.config({ path: 'C:\Users\HP\OneDrive\Desktop\User management\env\config.env' });
+require('dotenv').config();
 
 const connectDB = async () => {
   try {
