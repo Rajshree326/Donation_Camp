@@ -6,7 +6,7 @@ dotenv.config({ path: 'C:\Users\HP\OneDrive\Desktop\User management\env\config.e
 const connectDB = async () => {
   try {
     // mongodb connection string
-    const con = await mongoose.connect(process.env.MONGO_URI.toString(), {
+    const con = await mongoose.connect(process.env.MONGO_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useFindAndModify: false,
