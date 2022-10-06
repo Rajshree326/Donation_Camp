@@ -1,7 +1,7 @@
 const axios = require('axios');
 const dotenv = require('dotenv');
 
-dotenv.config({ path: 'env/config.env' });
+dotenv.config({ path: 'C:\Users\HP\OneDrive\Desktop\User management\env\config.env' });
 const PORT = process.env.PORT || 8080;
 
 exports.homeRoutes = (req, res) => {
@@ -9,7 +9,7 @@ exports.homeRoutes = (req, res) => {
   axios
     .get(`http://localhost:${PORT}/api/users`)
     .then(function (response) {
-      res.render('index', { users: response.data });
+      res.render('index', { users: response.data ,port: PORT});
     })
     .catch((err) => {
       res.send(err);
