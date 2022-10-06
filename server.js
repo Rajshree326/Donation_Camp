@@ -6,8 +6,8 @@ const path = require('path');
 const app = express();
 const connectDB = require('./server/database/connection');
 
-dotenv.config();
-const PORT = process.env.PORT || 3000;
+dotenv.config({ path: 'env/config.env' });
+const PORT = process.env.PORT || 8080;
 
 app.use(morgan('tiny'));
 
